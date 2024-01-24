@@ -1,0 +1,40 @@
+/* Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
+    text-align: center; /* Center-align text */
+    background-size: cover; /* Cover the entire background */
+}
+
+/* Game board styling */
+#board {
+    width: 540px; /* Set board width */
+    height: 600px; /* Set board height */
+    margin: 0 auto; /* Center the board horizontally */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of tiles */
+    background: url("./soil.png"); /* Set background with soil image */
+    background-size: cover; /* Cover the entire board with the background */
+    border: 3px solid white; /* Add white border */
+    border-radius: 25px; /* Add border-radius for rounded corners */
+}
+
+/* Individual tile styling */
+#board div {
+    width: 180px; /* Set tile width */
+    height: 180px; /* Set tile height */
+    background-image: url("./pipe.png"); /* Set background image for tiles */
+    background-size: cover; /* Cover the entire tile with the background image */
+}
+
+/* Image inside tiles styling */
+#board div img {
+    width: 100px; /* Set image width */
+    height: 100px; /* Set image height */
+
+    /* Disable user selection for images */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
